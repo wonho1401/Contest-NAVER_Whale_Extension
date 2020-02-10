@@ -1,0 +1,23 @@
+{
+   "app_description": {
+      "message": "Audio volume control for Chrome™. Set sound level for each tab separately with audio control and sound booster."
+   },
+   "app_name": {
+      "message": "Volume Control"
+   },
+   "app_short_name": {
+      "message": "Volume Control"
+   },
+   "app_title": {
+      "message": "Volume Control"
+   },
+   "popup_list_tabs": {
+      "message": "Active tabs playing audio:"
+   },
+   "popup_list_tabs_no_play": {
+      "message": "There are no tabs with audio right now"
+   },
+   "popup_volume": {
+      "message": "Volume:"
+   }
+}

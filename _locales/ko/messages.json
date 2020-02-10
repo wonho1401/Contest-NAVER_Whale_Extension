@@ -1,0 +1,23 @@
+{
+   "app_description": {
+      "message": "Chrome™ 용 오디오 볼륨 컨트롤. 사운드 부스터로 볼륨을 높이십시오. 오디오 컨트롤을 사용하여 각 탭의 볼륨 레벨을 개별적으로 설정하십시오."
+   },
+   "app_name": {
+      "message": "오르내림"
+   },
+   "app_short_name": {
+      "message": "오르내림"
+   },
+   "app_title": {
+      "message": "오르내림"
+   },
+   "popup_list_tabs": {
+      "message": "현재 재생 중인 탭 : "
+   },
+   "popup_list_tabs_no_play": {
+      "message": "소리를 재생중인 탭이 없습니다 : ("
+   },
+   "popup_volume": {
+      "message": "음량 : "
+   }
+}

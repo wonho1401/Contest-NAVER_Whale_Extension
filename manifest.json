@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "jquery.js", "core.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "design/olnl-192.png",
+      "default_popup": "popup.html",
+      "default_title": "OLNL"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "OLNL",
+   "icons": {
+      "128": "design/olnl-128.png",
+      "192":"design/olnl-192.png"
+   },
+   "manifest_version": 2,
+   "name": "오르내림",
+   "permissions": [ "tabCapture", "activeTab", "tabs", "storage", "notifications", "http://*/", "https://*/", "webRequest", "webRequestBlocking" ],
+   "short_name": "오르내림",
+   "version": "1"
+
+}

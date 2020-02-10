@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; }
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-size: 62.5%;
+    width: 410px;
+    height: auto;
+    min-height: 160px;
+}
+
+body {
+    overflow: hidden;
+}
+
+.mute_speaker {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.vlCtrl {
+    position: absolute;
+    top: -39px;
+    left: 220px;
+    -webkit-transform: translate(-50%, 150%);
+    transform: translate(-50%, 150%);
+    height: 45px;
+    width: 300px;
+}
+.vlCtrl svg{
+    max-height:35px;
+}
+svg, path {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#ctrlCirce {
+    cursor: pointer;
+}
+
+
+
+
+#soundOff:hover{
+  color:white;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+  background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+#soundOff{
+  font-family: 'NanumSquareRound';
+  border: 2px solid #86A8E7;
+  background-color: rgba(0,0,0,0);
+  color: #86A8E7;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 70px;
+}
+
+.volElem {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    cursor: pointer;
+}
+.volume-info{
+    height: 15px;
+}
+
+
+
+
+
+#p{
+  background: #7F7FD5;
+  background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+  background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: 'NanumSquareRound';
+  font-size: 25px
+}
+.box {
+  width: 430px;
+  height: 50px;
+  left: -10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px  rgba(black, .2);
+  background: lighten(#91EAE4, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave{
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #7F7FD5;
+  width: 500px;
+  height: 300px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 7000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 5000ms infinite linear;
+  opacity: .1;
+  background: #91EAE4;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(#91EAE4, 1), rgba(#7F7FD5, 0) 80%, rgba(#86A8E7, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 50px;
+
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'NanumSquareRound';
+  letter-spacing: .2em;
+  font-size: 28px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.Mutebutton{
+  font-family: 'NanumSquareRound';
+}
+
+
+
+#stereo{
+    position: absolute;
+    top: 60px;
+}
+.tabs{
+    position: relative;
+    font-family: 'NanumSquareRound';
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 9%;
+    width: 80%;
+}
+.tabs > * {
+  font-family: 'NanumSquareRound';
+  font-size: 14px}
+
+
+.tabs__title{
+  top: 130px;
+  left: 100px;
+  font-family: 'NanumSquareRound';
+  margin-bottom:.25em;
+  text-align:center;
+  font-weight:700;
+  color: black;
+}
+.tab{
+  top: 130px;
+  font-family: 'NanumSquareRound';
+  border-bottom:1px solid ##91EAE4;
+  display:-webkit-box;
+  display:-ms-flexbox;display:flex;text-decoration:none;
+  color: #556cb8;
+  -webkit-transition-property:background-color;
+  transition-property:background-color;
+  -webkit-transition-duration:.3s;transition-duration:.3s
+}
+.tab:last-child{border-bottom:hidden}
+.tab:hover{
+  background: #C9D6FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E8FFFF, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E8FFFF, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+.tab__item{white-space:nowrap;padding:.75em .25em}
+.tab__item:first-child{padding-left:.5em}  .tab__item:last-child{padding-right:.5em}
+.tab__icon-image{width:16px;height:16px}
+.tab__title{text-overflow:ellipsis;overflow:hidden;width:100%}
+
+.link{text-decoration:none}.link:hover{text-decoration:underline}.link--external{color: #556cb8
+                                                                 }
+footer{
+    text-align: center;
+}
+a#rate{
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+svg.pulse-svg {
+    animation: pulse-me 4s linear infinite;
+}
+
+@keyframes pulse-me {
+    0% {
+        transform: scale(1);
+        fill: #ff0007;
+    }
+    50% {
+        transform: scale(0.95);
+        fill: orange;
+    }
+    70% {
+        transform: scale(0.90);
+        fill: orange;
+    }
+    100% {
+        transform: scale(0.91);
+        fill: #ff0007;
+    }
+}
